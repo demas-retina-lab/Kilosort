@@ -49,6 +49,11 @@ rez                = find_merges(rez, 1);
 
 rootZ = fullfile(rootZ, 'kilosort3');
 mkdir(rootZ)
+
+rez=correct_time(rez);
+% rewrite temp_wh to the original length
+rewrite_temp_wh(ops)
+
 rezToPhy2(rez, rootZ);
 
 %% 
